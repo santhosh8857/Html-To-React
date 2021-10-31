@@ -1,11 +1,9 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Section from "./components/Section";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
-  );
-}
+const App = () => {
+  return <Section />;
+};
 
 export default App;
