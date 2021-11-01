@@ -140,7 +140,7 @@ const Card = (props) => {
 
         {/* button */}
         <div className="d-grid">
-          <a className="btn btn-primary text-uppercase">Button</a>
+          <button className="btn btn-primary text-uppercase">Button</button>
         </div>
       </div>
     </div>
