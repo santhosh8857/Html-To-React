@@ -50,6 +50,7 @@ const Card = (props) => {
 
         {/* List */}
         <ul className="fa-ul">
+          {/* User counts */}
           {props.type.subscription === "FREE" ? (
             <li>
               <span className="fa-li">
@@ -65,6 +66,7 @@ const Card = (props) => {
               <strong>{props.type.users}</strong>
             </li>
           )}
+          {/* Storage */}
           <li>
             <span className="fa-li">
               <i className="fas fa-check"></i>
@@ -83,6 +85,8 @@ const Card = (props) => {
             </span>
             Community Access
           </li>
+
+          {/* Disabling option wrt to subscription */}
           {props.type.subscription === "FREE" ? (
             <li className="text-muted">
               <span className="fa-li">
@@ -113,6 +117,8 @@ const Card = (props) => {
               Dedicated Phone Support
             </li>
           )}
+
+          {/* Calling domain function for the domain option rendering */}
           {domain(props.type.subscription)}
 
           {props.type.subscription === "PRO" ? (
@@ -131,6 +137,8 @@ const Card = (props) => {
             </li>
           )}
         </ul>
+
+        {/* button */}
         <div className="d-grid">
           <a className="btn btn-primary text-uppercase">Button</a>
         </div>
